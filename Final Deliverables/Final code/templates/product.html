@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<link href={{url_for('static',filename="/stylesheets/slidebars.css")}} rel="stylesheet">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.104.2">
+  <title>Sidebars · Bootstrap v5.2</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sidebars/">
+
+<link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+<style>
+  body{
+    background-color: rgb(255, 255, 255);
+  }
+</style>
+    </head>
+    <body >
+      
+
+<!-- side bars  -->
+
+<div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+  
+    <img src = {{url_for('static',filename="/images/product.png")}} width="40" height="40">
+    <span class="fs-5 fw-semibold">CATEGORIES</span>
+  <ul class="list-unstyled ps-0">
+    <li class="border-top my-3"></li>
+     <li  class="mb-1">
+
+
+      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+       
+        <element class="btn-toggle">
+          
+        <h2>Womens </h2>
+      </button>
+      
+      <div class="collapse" id="home-collapse" style>
+        <ul  type="disc">
+          <h4><li><a href="churidars" target="Right-Vertical" class="link-dark d-inline-flex text-decoration-none rounded">chudidars</a></li>
+          <li><a href="sarees" target="Right-Vertical" class="link-dark d-inline-flex text-decoration-none rounded">Sarres</a></li>
+          <li><a href="western" target="Right-Vertical" class="link-dark d-inline-flex text-decoration-none rounded">Western Clothing</a></li></h4>
+        </ul>
+      </div>
+    </li>
+    <li class="mb-1">
+      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+        <h2>Men's</h2> 
+      </button>
+      <div class="collapse" id="dashboard-collapse" style>
+        <!-- <ul type="square" class="btn-toggle-nav list-unstyled fw-normal pb-1 small"> -->
+          <ul type="disc">
+          <h4><li><a href="t-shirts" target="Right-Vertical" class="link-dark d-inline-flex text-decoration-none rounded">T-Shirts</a></li>
+          <li><a href="jackets" target="Right-Vertical"  class="link-dark d-inline-flex text-decoration-none rounded">Jackets</a></li>
+          <li><a href="Pants" target="Right-Vertical" class="link-dark d-inline-flex text-decoration-none rounded">Pants</a></li>
+          <li><a href="jeans" target="Right-Vertical" class="link-dark d-inline-flex text-decoration-none rounded">Jeans</a></li>
+          <li><a href="shorts" target="Right-Vertical" class="link-dark d-inline-flex text-decoration-none rounded">Shorts</a></li>
+          <li><a href="coarts" target="Right-Vertical" class="link-dark d-inline-flex text-decoration-none rounded">Coats</a></li></h4>
+        </ul>
+      </div>
+    </li>
+    <li class="mb-1">
+      <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+        <h2>Kid's</h2>
+      </button>
+      <div class="collapse" id="orders-collapse" style>
+        <ul type="disc">
+          <h4><li><a href="kids_frocks" target="Right-Vertical" class="link-dark d-inline-flex text-decoration-none rounded">Girls-Frocks&Jumpsuits</a></li>
+          <li><a href="boys_shirts" target="Right-Vertical" class="link-dark d-inline-flex text-decoration-none rounded">Boys-T Shirts</a></li>
+          <li><a href="boys_pants" target="Right-Vertical" class="link-dark d-inline-flex text-decoration-none rounded">Boys-Pants</a></li>
+         </h4>
+        </ul>
+      </div>
+    </li>
+   
+</div>
+
+<!-- end side bars  -->
+
+      
+
+
+
+    </body>
+</html>
